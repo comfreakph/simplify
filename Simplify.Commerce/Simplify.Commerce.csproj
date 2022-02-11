@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51DABB3B-27DE-4B80-87B7-DE8047ECE382}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simplify.Commerce</RootNamespace>
+    <AssemblyName>Simplify.Commerce</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractTransaction.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="APIAddressCommand.cs" />
+    <Compile Include="APIAndroidPayCommand.cs" />
+    <Compile Include="APIApplePayCommand.cs" />
+    <Compile Include="APICardPresentCommand.cs" />
+    <Compile Include="APIDescriptorCommand.cs" />
+    <Compile Include="APIInstallmentDetailsCommand.cs" />
+    <Compile Include="APIOrderCreateCommand.cs" />
+    <Compile Include="APIOrderItemCreateCommand.cs" />
+    <Compile Include="APIReceiptCommand.cs" />
+    <Compile Include="APISecure3DCommand.cs" />
+    <Compile Include="APISecure3DRequestCommand.cs" />
+    <Compile Include="APISessionRequestCommand.cs" />
+    <Compile Include="Api\Authentication.cs" />
+    <Compile Include="Api\PaymentsApi.cs" />
+    <Compile Include="Authorization.cs" />
+    <Compile Include="BinaryFileData.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CardPresent.cs" />
+    <Compile Include="CardToken.cs" />
+    <Compile Include="Chargeback.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Coupon.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DataToken.cs" />
+    <Compile Include="Deposit.cs" />
+    <Compile Include="Exception\ApiCommunicationException.cs" />
+    <Compile Include="Exception\ApiException.cs" />
+    <Compile Include="Exception\AuthenticationException.cs" />
+    <Compile Include="Exception\InvalidRequestException.cs" />
+    <Compile Include="Exception\NotAllowedException.cs" />
+    <Compile Include="Exception\OauthException.cs" />
+    <Compile Include="Exception\ObjectNotFoundException.cs" />
+    <Compile Include="Exception\ServerErrorException.cs" />
+    <Compile Include="Exception\UnknownStateException.cs" />
+    <Compile Include="FraudCheck.cs" />
+    <Compile Include="FraudResult.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="InvoiceItem.cs" />
+    <Compile Include="Oauth\OauthAccessToken.cs" />
+    <Compile Include="Oauth\OauthAccessTokenRequest.cs" />
+    <Compile Include="Oauth\OauthRevokeAccessToken.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="Plan.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Refund.cs" />
+    <Compile Include="Secure3DData.cs" />
+    <Compile Include="SimplifyConstants.cs" />
+    <Compile Include="Subscription.cs" />
+    <Compile Include="Tax.cs" />
+    <Compile Include="TransactionDetails.cs" />
+    <Compile Include="TransactionReview.cs" />
+    <Compile Include="Util\ObjectToIdConverter.cs" />
+    <Compile Include="Util\ResourceList.cs" />
+    <Compile Include="Webhook.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\packages.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Simplify.Commerce.csproj.CoreCompileInputs.cache" />
+    <None Include="packages.config" />
+    <None Include="packages\Newtonsoft.Json.5.0.6\Newtonsoft.Json.5.0.6.nupkg" />
+    <None Include="packages\repositories.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CHANGES.txt" />
+    <Content Include="json.net-license.txt" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\netcore45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\netcore45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.5.0.6\lib\portable-net45+wp80+win8\Newtonsoft.Json.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

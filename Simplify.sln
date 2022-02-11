@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplify.Commerce", "Simplify.Commerce\Simplify.Commerce.csproj", "{51DABB3B-27DE-4B80-87B7-DE8047ECE382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplify.WebApi", "Simplify.WebApi\Simplify.WebApi.csproj", "{3DFBDABA-B723-430A-B7FD-BABA4B1731D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplify.TestConsole", "Simplify.TestConsole\Simplify.TestConsole.csproj", "{1E56D48E-2B02-4BAA-8C66-B2BD3B97D11E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51DABB3B-27DE-4B80-87B7-DE8047ECE382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DABB3B-27DE-4B80-87B7-DE8047ECE382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DABB3B-27DE-4B80-87B7-DE8047ECE382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DABB3B-27DE-4B80-87B7-DE8047ECE382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DFBDABA-B723-430A-B7FD-BABA4B1731D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFBDABA-B723-430A-B7FD-BABA4B1731D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFBDABA-B723-430A-B7FD-BABA4B1731D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFBDABA-B723-430A-B7FD-BABA4B1731D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E56D48E-2B02-4BAA-8C66-B2BD3B97D11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E56D48E-2B02-4BAA-8C66-B2BD3B97D11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E56D48E-2B02-4BAA-8C66-B2BD3B97D11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E56D48E-2B02-4BAA-8C66-B2BD3B97D11E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B4C0AD3-7CB4-4722-92B6-EF3ACDD59898}
+	EndGlobalSection
+EndGlobal
